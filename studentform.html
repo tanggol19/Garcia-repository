@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+              background-image: url('steam.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a62a6;
+        }
+
+        form {
+            background: #ffffff;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 8px 12px;
+            margin-top: 4px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        legend {
+            font-size: 1.1em;
+            margin-top: 25px;
+            color: #2c3e50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            margin-right: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button[type="reset"] {
+            background-color: #e74c3c;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <legend><strong>Personal Information</strong></legend>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="middleInitial">Middle Initial:</label>
+        <input type="text" id="middleInitial" name="middleInitial">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" cols="30"></textarea>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber">
+
+        <legend><strong>Educational Attainment</strong></legend>
+
+        <label for="elementary">Elementary:</label>
+        <input type="text" id="elementary" name="elementary">
+
+        <label for="juniorHigh">Junior Highschool:</label>
+        <input type="text" id="juniorHigh" name="juniorHigh">
+
+        <label for="seniorHigh">Senior Highschool:</label>
+        <input type="text" id="seniorHigh" name="seniorHigh">
+
+        <label for="strand">Strand / Track:</label>
+        <select id="strand" name="strand">
+            <option value="ABM">ABM</option>
+            <option value="ICT">ICT</option>
+            <option value="GASS">GASS</option>
+            <option value="HUMSS">HUMSS</option>
+        </select>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college">
+
+        <label for="program">Program:</label>
+        <input type="text" id="program" name="program">
+
+        <legend><strong>Documents Submitted</strong></legend>
+        <input type="checkbox" id="transcript" name="documents" value="Transcript of Records">
+        <label for="transcript">Transcript of Records</label><br>
+
+        <input type="checkbox" id="birthCert" name="documents" value="Birth Certificate">
+        <label for="birthCert">Birth Certificate</label><br>
+
+        <input type="checkbox" id="medResult" name="documents" value="Medical Result">
+        <label for="medResult">Medical Result</label><br>
+
+        <input type="checkbox" id="form137" name="documents" value="Form 137">
+        <label for="form137">Form 137</label><br><br>
+
+        <legend><strong>Upload Scanned Copy</strong></legend>
+        <label for="uploadFile">Upload a file:</label>
+        <input type="file" id="uploadFile" name="uploadFile">
+
+        <br><br>
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+
+<li><a href="index.html">Back</a></li>

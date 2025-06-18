@@ -1,0 +1,98 @@
+ #hero h2, #hero p {
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    #hero p {
+      animation-delay: 3.5s;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+   
+
+ 
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #03ba12;
+  background: #f4f4f4;
+  background-color: #03ba12;
+  background-image: url('R.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+  color: #333333;
+  padding: 0 20px;
+}
+
+header {
+  background: #4bef19;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e3f2fd;
+}
+
+section {
+  padding: 40px 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #2196f3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.contact {
+  background: #ffffff;
+  padding: 15px;
+  color: #000000;
+  margin-bottom: 20px;
+  border-left: 4px solid #2196f3;
+}
+
+.section-title {
+    color: #f07272; /* change to any color you like */
+}
